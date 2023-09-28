@@ -1,0 +1,28 @@
+{% extends 'accounts/base_account.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <style>
+        .auth-box{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    </style>
+    <section>
+        <div class="container">
+            <div class="auth-box">
+                <form class="contact__form" action="" method="post">
+                    <h2>Register</h2>
+                    {% csrf_token %}
+                    {{form}}
+                    <input class="orders-form-button" type="submit" value="Ro'yhatdan o'tish">
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<br>
+                <br>
+{% endblock %}
