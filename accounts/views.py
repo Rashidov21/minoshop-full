@@ -23,3 +23,6 @@ class SimpleUserCreateView(CreateView):
         # form = self.form 
         return super().form_valid(form)
     
+    
+
+    
